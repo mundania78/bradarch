@@ -7,7 +7,7 @@ html {
  */
 body {
   font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #FFFFFF;
   min-height: 100%;
   height: auto !important;
   height: 100%;
@@ -64,12 +64,13 @@ img {
   text-align: left; }
 
 .jumbotron {
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0px;
   border-top: 0;
-  padding: 175px;
-  margin-top: 130px;
-  background-color: gray; }
+  background-position: center;
+  background: url("../img/loft_apt.png");
+  max-width: 100%;
+  border-bottom: 10px solid #bde4e9;
+  margin-top: 90px; }
 
 .brand-container {
   float: left;
@@ -181,7 +182,7 @@ a.site-caption {
   margin: 16px 62px; }
 
 .site-footer {
-  background-color: gray;
+  background-color: #ebebeb;
   padding: 24px 0px;
   border-top: 7px solid orange; }
 
@@ -189,11 +190,11 @@ a.site-caption {
   padding: 12px 26px 30px; }
 
 .site-footer p {
-  color: white;
+  color: #4E4F53;
   font-size: 16px; }
 
 .site-footer a {
-  color: white;
+  color: #4E4F53;
   font-size: 16px; }
 
 .profile {
