@@ -1,0 +1,299 @@
+
+@import "../lib/bootstrap/css/bootstrap.css";
+
+html {
+  height: 100%;
+}
+
+/**
+ * Generic System Defaults
+ */
+
+body {
+  font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
+  background-color: #FFFFFF;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%; /** NEED FOR IE **/
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 14px;
+}
+
+p { 
+margin: 0px;
+}
+
+a {
+  font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
+  font-weight: 300;
+  color: rgb(67, 67, 67);  
+  text-decoration: none;
+}
+
+a:hover {
+  color: #B3B3B3;
+  text-decoration: none;
+} 
+
+.jumbotron h1 {
+  color: white;
+  position: relative;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  margin-top: 175px;
+}
+
+.jumbotron {
+  background: url(../img/blue.png) no-repeat center;
+  height: 515px;
+  margin-top: 175px;
+  background-color: transparent;
+  margin: 15px;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 0px;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.site-header {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 5px rgb(64,64,64);
+  left: 0;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.brand-container {
+  float: left;
+  margin: 0px 54px 0px;
+  padding: 0;
+}
+
+.brand {
+  display: block;
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: .05em;
+  margin: 28px 26px;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+.brand-container a {
+  color: rgb(44, 190, 193);
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+
+nav {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.nav a {
+  color: #FFFFFF;
+  font-weight: 403;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: .07em;
+  text-decoration: none;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav > li.active a,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: transparent;
+  color: #B3B3B3;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-decoration: none;
+}
+
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+  border-top: 0;
+  box-shadow: 0 0 0;
+  background-color: #E87D25;
+}
+
+.pagelayout {
+  margin-bottom: 46px;
+}
+
+.sidelayout {
+  margin-bottom: 36px;
+  margin-top: 21px;
+}
+
+h1.sidecontent  {
+  font-weight: 100;
+  padding: 2px 10px 0px;
+  font-size: 64px;
+}
+
+.sidecontent p {
+  font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.3em;
+  padding: 12px 0px;
+}
+
+a.site-caption {
+  color: rgb(44, 190, 193);
+}
+
+.project {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.site-footer {
+  background-color: #ebebeb;
+  padding: 24px 0px;
+  border-top: 7px solid orange;
+}
+
+.site-footer .container {
+  padding: 12px 26px 30px;
+}
+
+.site-footer p {
+  color: #4E4F53;
+  font-size: 16px;
+}
+
+.site-footer a {
+  color: #4E4F53;
+  font-size: 16px;
+}
+
+.contact-info a {
+  font-size: 24px;
+}
+
+
+@media (max-width: 768px){ 
+
+   .brand {
+    margin: 12px 40px;    
+  }
+
+  .navbar-toggle {
+    margin-top: -40px;
+    position: relative;
+    top: 0px;
+    right: 12px;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+   }
+  
+  .navbar-collapse {
+    clear: both;
+  }
+  
+  .site-header nav {
+    width: 100%;
+  }
+
+  .jumbotron {
+    margin-top: 50px;
+  }
+
+  nav {
+    float: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+  nav li  {
+    border-bottom: 1px dotted #BFBFBF;
+ }
+  
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .site-footer .container {
+    padding: 0px 12px;
+    margin: 6px 0px 0px;
+  }
+}
+
+  /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  
+  .navbar-toggle {
+    margin-top: -50px;
+  }
+
+  .brand {
+    margin: 24px 0px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    z-index: 5;
+  }
+
+
+  .col { 
+    margin: 1% 0 1% 0%;
+  }
+
+  .span_2_of_2 {
+    width: 100%; 
+  }
+  
+  .span_1_of_2 {
+    width: 100%;
+  }
+}
+
+
+
+
