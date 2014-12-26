@@ -1,5 +1,6 @@
 
 @import "../lib/bootstrap/css/bootstrap.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
 
 html {
   height: 100%;
@@ -10,7 +11,7 @@ html {
  */
 
 body {
-  font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
   background-color: #FFFFFF;
   min-height: 100%;
   height: auto !important;
@@ -21,7 +22,14 @@ body {
 
 img {
   max-width: 100%;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 p { 
@@ -29,9 +37,7 @@ margin: 0px;
 }
 
 a {
-  font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
   font-weight: 300;
-  color: rgb(67, 67, 67);  
   text-decoration: none;
 }
 
@@ -40,13 +46,20 @@ a:hover {
   text-decoration: none;
 } 
 
+.img-responsive {
+  width: 100%;
+  padding-top: 20px;
+}
+
 .jumbotron h1 {
-  color: white;
+  font-family: 'Museo-Sans', "Museo Sans", Helvetica, Arial, sans-serif;
   position: relative;
   color: white;
   line-height: 1;
+  font-size: 76px;
   text-align: center;
   margin-top: 175px;
+  text-shadow: 3px 3px #0B4146;
 }
 
 .jumbotron {
@@ -54,21 +67,21 @@ a:hover {
   height: 515px;
   margin-top: 175px;
   background-color: transparent;
-  margin: 15px;
-
+  margin: 6px 29px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.img-responsive {
-  width: 100%;
-}
-
 .container {
   width: 100%;
   padding: 0px;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .row {
@@ -88,43 +101,30 @@ a:hover {
 }
 
 .brand-container {
-  float: left;
-  margin: 0px 54px 0px;
-  padding: 0;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.brand {
-  display: block;
-  font-weight: 400;
-  font-size: 21px;
-  letter-spacing: .05em;
-  margin: 28px 26px;
-  text-transform: uppercase;
-  z-index: 5;
-}
 
-.brand-container a {
-  color: rgb(44, 190, 193);
-}
-
-.portfolio-item {
-  margin-bottom: 25px;
-}
-
+/*----------------
+=nav 
+------------------*/
 
 nav {
   width: 60%;
   margin: 10px auto;
 }
 
-.navigation li {
-  list-style-type: none;
+nav li {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .nav a {
   color: #FFFFFF;
-  font-weight: 403;
-  font-size: 16px;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: .07em;
   text-decoration: none;
@@ -137,8 +137,7 @@ nav {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: transparent;
-  color: #B3B3B3;
-  border-radius: 3px;
+  color: rgb(233, 233, 174);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   text-decoration: none;
@@ -152,146 +151,290 @@ nav {
   background-color: #E87D25;
 }
 
+/*----------------
+=page layout 
+------------------*/
+
 .pagelayout {
-  margin-bottom: 46px;
+  margin: 160px 24px 0px;
 }
 
-.sidelayout {
-  margin-bottom: 36px;
-  margin-top: 21px;
-}
 
 h1.sidecontent  {
   font-weight: 100;
   padding: 2px 10px 0px;
-  font-size: 64px;
+  line-height: 1.25;
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 24px;
 }
 
 .sidecontent p {
-  font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
   font-weight: 300;
   font-size: 21px;
-  line-height: 1.3em;
+  line-height: 1.5em;
   padding: 12px 0px;
 }
 
-a.site-caption {
-  color: rgb(44, 190, 193);
+.project {
+  margin: 0px;
+  padding: 0px 12px;
 }
 
-.project {
-  margin-top: 25px;
+.project img {
+  margin-bottom: 5px;
+}
+
+.project.bottom-edition {
   margin-bottom: 25px;
+}
+
+h2.post-title a {
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: gray;
+}
+
+.post-title a:hover {
+    color: orange;
+}
+
+.profile {
+  margin-top: 36px;
+  margin-bottom: 60px; 
+}
+
+.profile p {
+  font-size: 18px;
+  margin: 25px 0px 25px; 
+}
+
+.profile h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.contact {
+  margin-bottom: 75px;
+  margin-top: 36px;
+}
+
+.contact h2 {
+  font-weight: 100;
+  font-size: 36px;
+}
+
+.contact a {
+  color: #4E4F53;
+  font-size: 14px;
+}
+
+.project-navigation {
+  background-color: rgb(222, 238, 243);
+  min-height: 92px;
+  text-align: center; 
+  margin-top: 25px;
+}
+
+.project-navigation .glyphicon {
+  font-weight: lighter;
+  margin-top: 25px;
+  font-size: 34px;
+  color: rgb(193, 197, 197);
+}
+
+.contact-map {
+  position: relative;
+  padding-bottom: 45%;
+  padding-top: 55px;
+  height: 0;
+}
+
+.contact-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-map a {
+  color: #4E4F53;
+  font-size: 14px;
 }
 
 .site-footer {
   background-color: #ebebeb;
-  padding: 24px 0px;
+  padding: 27px 14px;
   border-top: 7px solid orange;
 }
 
+.site-footer {
+  background-color: #ebebeb;
+  border-top: 7px solid orange;
+}
+
+.site-footer .info {
+  padding: 0px 14px;
+}
+
 .site-footer .container {
-  padding: 12px 26px 30px;
+  padding: 14px 26px 30px;
 }
 
-.site-footer p {
+.site-footer p, .site-footer a {
   color: #4E4F53;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.5em;
 }
 
-.site-footer a {
-  color: #4E4F53;
-  font-size: 16px;
+.typekit-badge {
+  display: none;
 }
 
-.contact-info a {
-  font-size: 24px;
-}
-
+/*----------------
+=media
+------------------*/
 
 @media (max-width: 768px){ 
 
-   .brand {
-    margin: 12px 40px;    
-  }
-
-  .navbar-toggle {
-    margin-top: -40px;
-    position: relative;
-    top: 0px;
-    right: 12px;
-    background-color: #FFFFFF;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 2px;
-   }
   
-  .navbar-collapse {
-    clear: both;
-  }
-  
-  .site-header nav {
-    width: 100%;
-  }
+    .navbar-toggle {
+      margin-top: -54px;
+      position: relative;
+      top: 0px;
+      right: 12px;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 2px;
+     }
+    
+    .navbar-collapse {
+      clear: both;
+    }
+    
+    .site-header nav {
+      width: 100%;
+    }
 
-  .jumbotron {
-    margin-top: 50px;
-  }
+    .brand-container img {
+      width: 14%;
+      margin: 8px;
+    }
 
-  nav {
-    float: none;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-}
+    .jumbotron, .jumbotron h1 {
+      display: none;
+    }
 
-  nav li  {
-    border-bottom: 1px dotted #BFBFBF;
- }
-  
-  .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: black;
-  }
-  
-  .site-footer .container {
-    padding: 0px 12px;
-    margin: 6px 0px 0px;
+    nav {
+      float: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    nav li {
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background-color: black;
+    }
+
+    .project {
+      padding: 3px 6px;
+    }
+    
+    .site-footer .container {
+      padding: 0px 12px;
+      margin: 6px 0px 0px;
+    }
+
+    .pagelayout {
+      margin: 95px 0px 0px;
+      padding: 10px 10px;
+    }
+
+    .project-navigation .glyphicon {
+      font-weight: lighter;
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    .northbridge {
+      margin-top: 105px;
+    }
+
+    h1.sidecontent  {
+      font-weight: 100;
+      padding: 2px 10px 0px;
+      font-size: 40px;
+    }
+    .social-media {
+    margin-top: 25px;
   }
 }
 
   /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
-  
-  .navbar-toggle {
-    margin-top: -50px;
+
+img {
+  max-width: 100%;
+}
+
+.img-responsive {
+  width: 100%;
+  padding-top: 8px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h2.post-title a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+nav li {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+.navbar-toggle {
+    margin-top: -40px;
   }
 
-  .brand {
-    margin: 24px 0px;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    z-index: 5;
-  }
+h1.sidecontent  {
+  font-weight: 100;
+  padding: 2px 10px 0px;
+  font-size: 36px;
+}
 
-
-  .col { 
-    margin: 1% 0 1% 0%;
-  }
-
-  .span_2_of_2 {
-    width: 100%; 
-  }
-  
-  .span_1_of_2 {
-    width: 100%;
-  }
+.sidecontent p {
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 12px 0px;
+ }
 }
 
 
