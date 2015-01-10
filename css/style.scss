@@ -22,7 +22,7 @@ body {
 
 img {
   max-width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -47,12 +47,11 @@ a:hover {
 } 
 
 .img-responsive {
-  width: 100%;
+  max-width: 100%;
   padding-top: 20px;
 }
 
 .jumbotron h1 {
-  font-family: 'Museo-Sans', "Museo Sans", Helvetica, Arial, sans-serif;
   position: relative;
   color: white;
   line-height: 1;
@@ -64,7 +63,7 @@ a:hover {
 
 .jumbotron {
   background: url(../img/blue.png) no-repeat center;
-  height: 515px;
+  height: 445px;
   margin-top: 175px;
   background-color: transparent;
   margin: 6px 29px;
@@ -101,23 +100,26 @@ a:hover {
 }
 
 .brand-container {
-  text-align: center;
-  margin-top: 10px;
+  text-align: left;
+  margin: 0px 26px 20px;
 }
 
+h1.coname {
+  display: none;
+}
 
 /*----------------
 =nav 
 ------------------*/
 
 nav {
-  width: 60%;
-  margin: 10px auto;
+  width: 65%;
+  margin: 0px auto;
 }
 
 nav li {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -159,7 +161,6 @@ nav li {
   margin: 160px 24px 0px;
 }
 
-
 h1.sidecontent  {
   font-weight: 100;
   padding: 2px 10px 0px;
@@ -199,7 +200,7 @@ h2.post-title a {
 
 .post-title a {
   text-decoration: none;
-  color: gray;
+  color: #4E4F53;
 }
 
 .post-title a:hover {
@@ -229,6 +230,7 @@ h2.post-title a {
 .contact h2 {
   font-weight: 100;
   font-size: 36px;
+  margin-top: 18px;
 }
 
 .contact a {
@@ -303,8 +305,7 @@ h2.post-title a {
 =media
 ------------------*/
 
-@media (max-width: 768px){ 
-
+@media only screen and (max-width: 768px){ 
   
     .navbar-toggle {
       margin-top: -54px;
@@ -324,9 +325,9 @@ h2.post-title a {
       width: 100%;
     }
 
-    .brand-container img {
-      width: 14%;
-      margin: 8px;
+    .brand-container {
+      text-align: left;
+      margin: 0px 24px;
     }
 
     .jumbotron, .jumbotron h1 {
@@ -336,7 +337,7 @@ h2.post-title a {
     nav {
       float: none;
       padding: 0px;
-      margin: 0px;
+      margin-top: 8px;
     }
 
     nav li {
@@ -383,7 +384,7 @@ h2.post-title a {
       font-size: 40px;
     }
     .social-media {
-    margin-top: 25px;
+      margin-top: 25px;
   }
 }
 
@@ -391,49 +392,52 @@ h2.post-title a {
 
 @media only screen and (max-width: 480px) {
 
-img {
-  max-width: 100%;
-}
-
-.img-responsive {
-  width: 100%;
-  padding-top: 8px;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-h2.post-title a {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-nav li {
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-
-.navbar-toggle {
-    margin-top: -40px;
+  .img-responsive {
+    padding-top: 5px;
   }
 
-h1.sidecontent  {
-  font-weight: 100;
-  padding: 2px 10px 0px;
-  font-size: 36px;
-}
+  .brand-container img {
+    max-width: 50%;
+  }
 
-.sidecontent p {
-  font-family: 'Open Sans', arial, helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5em;
-  padding: 12px 0px;
+  h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  h2.post-title a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  nav li {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .navbar-toggle {
+      margin-top: -52px;
+    }
+
+  h1.sidecontent {
+    font-weight: 100;
+    padding: 2px 10px 0px;
+    font-size: 36px;
+  }
+
+  .brand-container {
+    text-align: left;
+    margin: 4px 24px;
+  }
+
+  .sidecontent p {
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 12px 0px;
  }
 }
 

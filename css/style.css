@@ -18,7 +18,7 @@ body {
 
 img {
   max-width: 100%;
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', arial, helvetica, sans-serif;
@@ -38,11 +38,10 @@ a:hover {
   text-decoration: none; }
 
 .img-responsive {
-  width: 100%;
+  max-width: 100%;
   padding-top: 20px; }
 
 .jumbotron h1 {
-  font-family: 'Museo-Sans', "Museo Sans", Helvetica, Arial, sans-serif;
   position: relative;
   color: white;
   line-height: 1;
@@ -53,7 +52,7 @@ a:hover {
 
 .jumbotron {
   background: url(../img/blue.png) no-repeat center;
-  height: 515px;
+  height: 445px;
   margin-top: 175px;
   background-color: transparent;
   margin: 6px 29px;
@@ -85,19 +84,22 @@ a:hover {
   z-index: 2; }
 
 .brand-container {
-  text-align: center;
-  margin-top: 10px; }
+  text-align: left;
+  margin: 0px 26px 20px; }
+
+h1.coname {
+  display: none; }
 
 /*----------------
 =nav 
 ------------------*/
 nav {
-  width: 60%;
-  margin: 10px auto; }
+  width: 65%;
+  margin: 0px auto; }
 
 nav li {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
@@ -166,7 +168,7 @@ h2.post-title a {
 
 .post-title a {
   text-decoration: none;
-  color: gray; }
+  color: #4E4F53; }
 
 .post-title a:hover {
   color: orange; }
@@ -189,7 +191,8 @@ h2.post-title a {
 
 .contact h2 {
   font-weight: 100;
-  font-size: 36px; }
+  font-size: 36px;
+  margin-top: 18px; }
 
 .contact a {
   color: #4E4F53;
@@ -250,7 +253,7 @@ h2.post-title a {
 /*----------------
 =media
 ------------------*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar-toggle {
     margin-top: -54px;
     position: relative;
@@ -266,9 +269,9 @@ h2.post-title a {
   .site-header nav {
     width: 100%; }
 
-  .brand-container img {
-    width: 14%;
-    margin: 8px; }
+  .brand-container {
+    text-align: left;
+    margin: 0px 24px; }
 
   .jumbotron, .jumbotron h1 {
     display: none; }
@@ -276,7 +279,7 @@ h2.post-title a {
   nav {
     float: none;
     padding: 0px;
-    margin: 0px; }
+    margin-top: 8px; }
 
   nav li {
     font-weight: 400;
@@ -318,12 +321,11 @@ h2.post-title a {
     margin-top: 25px; } }
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 @media only screen and (max-width: 480px) {
-  img {
-    max-width: 100%; }
-
   .img-responsive {
-    width: 100%;
-    padding-top: 8px; }
+    padding-top: 5px; }
+
+  .brand-container img {
+    max-width: 50%; }
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
@@ -340,12 +342,16 @@ h2.post-title a {
     text-transform: uppercase; }
 
   .navbar-toggle {
-    margin-top: -40px; }
+    margin-top: -52px; }
 
   h1.sidecontent {
     font-weight: 100;
     padding: 2px 10px 0px;
     font-size: 36px; }
+
+  .brand-container {
+    text-align: left;
+    margin: 4px 24px; }
 
   .sidecontent p {
     font-family: 'Open Sans', arial, helvetica, sans-serif;
